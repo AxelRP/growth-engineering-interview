@@ -1,0 +1,15 @@
+$transition: all .5s cubic-bezier(.05,.2,.1,1);
+
+.transition {
+  transition: $transition!important;
+}
+
+.rotate {
+  -webkit-animation: Rotate 1s linear infinite;
+  -moz-animation: Rotate 1s linear infinite;
+  animation: Rotate 1s linear infinite;
+}
+@-webkit-keyframes Rotate {
+  0%{transform: rotate(0)}
+  100%{transform: rotate(360deg)}
+}

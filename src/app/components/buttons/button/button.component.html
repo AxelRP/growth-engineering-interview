@@ -1,0 +1,14 @@
+<button class="bg-softBlack hover:bg-primary hover:text-black transition py-3 mt-6 px-4 rounded-md" *ngIf="!processing"
+        [ngClass]="{'w-full': expanded, 'rounded-2xl': rounded, 'rounded-md': !rounded}"
+        type="button" (click)="onClick.emit()">
+  <i class="mr-2" *ngIf="icon" [ngClass]="[icon]"></i>
+  {{text}}
+</button>
+
+<button class="bg-softBlack bg-blue transition py-3 mt-6 opacity-50 cursor-default" *ngIf="processing"
+        [disabled]="true"
+        [ngClass]="{'w-full': expanded, 'rounded-2xl': rounded, 'rounded-md': !rounded}"
+        type="button">
+  <i class="fas fa-cog mr-2 fa-spin"></i>
+  Processing...
+</button>

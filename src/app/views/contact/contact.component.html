@@ -1,0 +1,39 @@
+<app-back-to-home></app-back-to-home>
+
+<section class="container m-auto px-1 mt-32">
+
+  <div class="flex flex-wrap justify-center mt-12">
+    <div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+      <form [formGroup]="form">
+        <h1 class="mb-10 primary-title text-white">
+          Send a <span class="text-primary">message</span>!
+        </h1>
+        <input class="w-full px-8 py-4 bg-white font-bold placeholder-gray-400 rounded-full focus:outline-none text-black"
+               formControlName="name"
+               type="text"
+               placeholder="Your name">
+        <small class="text-red" *ngIf="name?.touched && name?.invalid">Required</small>
+
+        <input class="mt-6 w-full px-8 py-4 bg-white font-bold placeholder-gray-400 rounded-full focus:outline-none text-black"
+               formControlName="email"
+               type="email"
+               placeholder="Your email">
+        <small class="text-red" *ngIf="email?.touched && email?.invalid">Must be a valid email</small>
+
+        <textarea class="w-full mt-6 px-8 py-4 bg-white font-bold placeholder-gray-400 rounded-3xl resize-none focus:outline-none text-black"
+                  formControlName="message"
+                  rows="7"
+                  placeholder="Your message"></textarea>
+        <small class="text-red" *ngIf="message?.touched && message?.invalid">Required</small>
+
+
+        <app-button text="Send message!" icon="fas fa-paper-plane"
+                    [processing]="sending"
+                    [expanded]="true" [rounded]="true" (onClick)="send()"></app-button>
+      </form>
+    </div>
+
+  </div>
+
+
+</section>

@@ -1,0 +1,62 @@
+<app-cover></app-cover>
+
+<section class="max-w-4xl mx-auto">
+  <div class="mb-5">
+    <h2 class="text-3xl mb-5">
+      <i class="fas fa-angle-right text-primary mr-3 fa-sm"></i>
+      Router
+    </h2>
+    <p class="mb-3">
+      This is the starting point of the app. You will find instructions below this router.
+      <br>
+      Navigate between the different pages and send all events you need.
+    </p>
+    <p>
+      As always, do not hesitate to contact us if you have any question.
+    </p>
+  </div>
+  <div class="flex flex-wrap items-center justify-center">
+    <div class="w-full md:w-1/2 p-2 md:p-3" *ngFor="let route of routes">
+      <div class="bg-softBlack transition hover:bg-primary rounded-xl hover:text-black p-5 text-center cursor-pointer"
+           [routerLink]="[route.path]">
+        <span class="text-sm">Go to</span>
+        <br>
+        <span class="text-2xl">{{route.title}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-4xl mx-auto my-12">
+  <div>
+    <h2 class="text-3xl">
+      <i class="fas fa-angle-right text-primary mr-3 fa-sm"></i>
+      What to do?
+    </h2>
+    <p>
+      Explain here the purpose of this exercise...
+    </p>
+  </div>
+
+</section>
+
+
+<section class="max-w-4xl mx-auto mt-12 mb-20">
+  <div>
+    <h2 class="text-3xl">
+      <i class="fas fa-angle-right text-primary mr-3 fa-sm"></i>
+      Useful links
+    </h2>
+
+    <div class="my-4">
+      <h4 class="text-xl">Job post</h4>
+      <a href="https://boards.greenhouse.io/paddle/jobs/6065263002?gh_jid=6065263002" class="underline cursor-pointer transition hover:text-primary">https://boards.greenhouse.io/paddle/jobs/6065263002?gh_jid=6065263002</a>
+    </div>
+    <div class="my-4">
+      <h4 class="text-xl">Paddle Website</h4>
+      <a href="https://paddle.com" class="underline cursor-pointer transition hover:text-primary">https://paddle.com</a>
+    </div>
+  </div>
+
+</section>

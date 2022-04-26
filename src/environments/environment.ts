@@ -3,7 +3,23 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  swal: {
+    confirmButtonColor: '#FDDD35',
+    background: '#0E1414',
+    color: '#fff',
+    cancelButtonColor: '#ED5656'
+  },
+
+  // UPDATE THIS VARIABLES ACCORDING TO YOUR SELECTED DB
+  platform: 'supabase', // supabase | aiven
+  supabase: {
+    url: "https://tthentnnqdrbtrofchjj.supabase.co",
+    key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR0aGVudG5ucWRyYnRyb2ZjaGpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTA5NzUwOTUsImV4cCI6MTk2NjU1MTA5NX0.EjUMrxW_TwOW6GiCorGDOZAUORGsKI-UXUJl3fmzOTU"
+  },
+  aiven: {
+    url: ""
+  }
 };
 
 /*
