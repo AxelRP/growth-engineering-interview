@@ -16,42 +16,30 @@ export class EventsService {
   }
 
   async registerPageView(href: string) {
-    switch (environment.platform) {
-      case "supabase":
-        const { data, error } = await this.supabase
-          .from('page_views')
-          .insert({
-            anon_id: this.anonIdSvc.anonId,
-            href
-          })
-        if (error) {
-          console.error('Supabase insert page view error:', error)
-        }
-        return !error;
-
-      default:
-        return false;
+    const { data, error } = await this.supabase
+      .from('page_views')
+      .insert({
+        anon_id: this.anonIdSvc.anonId,
+        href
+      })
+    if (error) {
+      console.error('Supabase insert page view error:', error)
     }
-
+    console.log('Page view event registered for:', href);
+    return !error;
   }
 
   async registerFormEvent(form: any) {
-    switch (environment.platform) {
-      case "supabase":
-        const { data, error } = await this.supabase
-          .from('form_submissions')
-          .insert({
-            anon_id: this.anonIdSvc.anonId,
-            ...form
-          })
-        if (error) {
-          console.error('Supabase insert form submission error:', error)
-        }
-        return !error;
-
-      default:
-        return false;
+    const { data, error } = await this.supabase
+      .from('form_submissions')
+      .insert({
+        anon_id: this.anonIdSvc.anonId,
+        ...form
+      })
+    if (error) {
+      console.error('Supabase insert form submission error:', error)
     }
-
+    console.log('Form submission registered:', form);
+    return !error;
   }
 }

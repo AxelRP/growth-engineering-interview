@@ -35,7 +35,6 @@ export class ContactComponent implements OnInit {
 
       const result = await this.eventSvc.registerFormEvent(this.form.value);
       if (result) {
-        console.log('Contact form submission registered:', this.form.value);
         this.helperSvc.showAlert(
           "Contact form sent!",
           "Form submission registered successfully.",

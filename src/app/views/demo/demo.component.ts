@@ -41,7 +41,6 @@ export class DemoComponent implements OnInit {
 
       const result = await this.eventSvc.registerFormEvent(this.form.value);
       if (result) {
-        console.log('Demo request form submission registered:', this.form.value);
         this.helperSvc.showAlert(
           "Demo form sent!",
           "Form submission registered successfully.",

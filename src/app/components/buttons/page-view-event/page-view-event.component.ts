@@ -21,7 +21,6 @@ export class PageViewEventComponent implements OnInit {
     const currentUrl = window.location.href;
     const result = await this.eventSvc.registerPageView(currentUrl);
     if (result) {
-      console.log('Page view event registered for:', currentUrl);
       this.helperSvc.showAlert(
         "Page view registered!",
         `URL: ${currentUrl}`,
