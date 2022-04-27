@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {PlanInterface} from "../../interfaces/plan.interface";
 
 @Component({
@@ -6,7 +6,7 @@ import {PlanInterface} from "../../interfaces/plan.interface";
   templateUrl: './pricing.component.html',
   styleUrls: ['./pricing.component.scss']
 })
-export class PricingComponent implements OnInit {
+export class PricingComponent {
   plans: PlanInterface[] = [
     {
       price: 0,
@@ -30,9 +30,4 @@ export class PricingComponent implements OnInit {
       name: 'Business'
     }
   ]
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

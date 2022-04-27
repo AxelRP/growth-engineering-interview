@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {EventsService} from "../../services/events.service";
 import {HelperService} from "../../services/helper.service";
@@ -8,7 +8,7 @@ import {HelperService} from "../../services/helper.service";
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss']
 })
-export class DemoComponent implements OnInit {
+export class DemoComponent {
   form: FormGroup = new FormGroup({
     name: new FormControl('', Validators.required),
     company: new FormControl('', Validators.required),
@@ -22,11 +22,7 @@ export class DemoComponent implements OnInit {
   constructor(
     private eventSvc: EventsService,
     private helperSvc: HelperService
-  ) {
-  }
-
-  ngOnInit(): void {
-  }
+  ) { }
 
   get name() { return this.form.get('name'); }
   get company() { return this.form.get('company'); }

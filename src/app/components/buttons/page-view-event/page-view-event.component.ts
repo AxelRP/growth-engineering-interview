@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {EventsService} from "../../../services/events.service";
 import {HelperService} from "../../../services/helper.service";
 
@@ -7,15 +7,12 @@ import {HelperService} from "../../../services/helper.service";
   templateUrl: './page-view-event.component.html',
   styleUrls: ['./page-view-event.component.scss']
 })
-export class PageViewEventComponent implements OnInit {
+export class PageViewEventComponent {
 
   constructor(
     private eventSvc: EventsService,
     private helperSvc: HelperService
   ) { }
-
-  ngOnInit(): void {
-  }
 
   async registerPageView() {
     const currentUrl = window.location.href;

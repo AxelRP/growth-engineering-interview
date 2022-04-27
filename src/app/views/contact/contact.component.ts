@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {EventsService} from "../../services/events.service";
 import {HelperService} from "../../services/helper.service";
@@ -8,7 +8,7 @@ import {HelperService} from "../../services/helper.service";
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   form: FormGroup = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -20,9 +20,6 @@ export class ContactComponent implements OnInit {
     private eventSvc: EventsService,
     private helperSvc: HelperService
   ) { }
-
-  ngOnInit(): void {
-  }
 
   get name() { return this.form.get('name'); }
   get email() { return this.form.get('email'); }
