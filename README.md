@@ -1,7 +1,5 @@
 # Growth Engineering - Technical Assignment
 
----
-
 Congratulations on making it this far! During your next interview, please be prepared to show and run the program(s).
 
 ### What's in this repo?
@@ -22,8 +20,6 @@ the code and upgrade some components/services if needed though.
 
 
 ## Objective
-
----
 
 The main objective is to enrich Hubspot contacts with website data and compute custom properties if needed. To do so, you will need:
 - Supabase project (more details on set up section)
@@ -52,8 +48,6 @@ create your own with SQL, Python, TypeScript..., or use an already available too
 
 
 ## Set up
-
---- 
 
 Before you start with the setup, you will need NodeJS installed: [https://nodejs.org/en/](https://nodejs.org/en/)
 1. Clone this repo in a local directory, open a terminal there and run `npm run install`.
@@ -85,8 +79,6 @@ Once created, still on [app.supabase.io](https://app.supabase.io/), on the left 
 
 ## Assignment
 
----
-
 #### Environment set up
 1. Run the app locally 
 2. Successfully register events in your DB
@@ -104,8 +96,6 @@ Bonus:
 
 
 ### Disclaimer
-
----
 
 We have integrated Supabase in the app since it is a ready-to-use free DB. If you are more comfortable using
 a different platform (Firebase, Aiven...), feel free to integrate it in the app. 
