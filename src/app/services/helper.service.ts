@@ -6,9 +6,6 @@ import {environment} from "../../environments/environment";
   providedIn: 'root'
 })
 export class HelperService {
-
-  constructor() { }
-
   generateId(length = 12) {
     let result           = '';
     const characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

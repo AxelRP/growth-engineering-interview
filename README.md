@@ -41,7 +41,8 @@ You will also find some forms (contact and request demo). When submitted, an eve
 
 ### Extraction Tool
 As long as you can read from your DB and process and send data into Hubspot, feel free to use any extraction tool you want: 
-create your own with SQL, Python, TypeScript..., or use an already available tool such as High Touch, Census...
+create your own with SQL, Python, TypeScript..., or use an already available tool such as 
+[High Touch](https://hightouch.io/), [Census](https://www.getcensus.com/)...
 
 
 
@@ -69,7 +70,7 @@ Once created, still on [app.supabase.io](https://app.supabase.io/), on the left 
      - product
      - company
 
-5. Finally, simply run `ng serve --open` and your default browser will open automatically.
+5. Finally, back to your terminal, simply run `ng serve --open` and your default browser will open automatically.
 
 
 
@@ -99,3 +100,7 @@ Bonus:
 
 We have integrated Supabase in the app since it is a ready-to-use free DB. If you are more comfortable using
 a different platform (Firebase, Aiven...), feel free to integrate it in the app. 
+
+--- 
+
+Some of these tools and concepts might be now for you, so if you get stuck or have any question, please do not hesitate to email us.

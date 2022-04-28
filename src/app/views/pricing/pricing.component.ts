@@ -10,23 +10,23 @@ export class PricingComponent {
   plans: PlanInterface[] = [
     {
       price: 0,
-      feature1: 1,
-      feature2: 20,
-      feature3: 1000,
+      admins: 1,
+      storage: 20,
+      events: 1000,
       name: 'Starter'
     },
     {
       price: 15,
-      feature1: 3,
-      feature2: 100,
-      feature3: 10000,
+      admins: 3,
+      storage: 100,
+      events: 10000,
       name: 'Basic'
     },
     {
       price: 45,
-      feature1: 10,
-      feature2: 500,
-      feature3: 100000,
+      admins: 10,
+      storage: 500,
+      events: 100000,
       name: 'Business'
     }
   ]

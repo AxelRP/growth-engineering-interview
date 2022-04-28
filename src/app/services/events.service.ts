@@ -24,8 +24,9 @@ export class EventsService {
       })
     if (error) {
       console.error('Supabase insert page view error:', error)
+    } else {
+      console.log('Page view event registered:', href);
     }
-    console.log('Page view event registered for:', href);
     return !error;
   }
 
@@ -38,8 +39,9 @@ export class EventsService {
       })
     if (error) {
       console.error('Supabase insert form submission error:', error)
+    } else {
+      console.log('Form submission registered:', form);
     }
-    console.log('Form submission registered:', form);
     return !error;
   }
 }

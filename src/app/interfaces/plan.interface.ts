@@ -1,7 +1,7 @@
 export interface PlanInterface {
   price: number;
-  feature1: number;
-  feature2: number;
-  feature3: number;
+  admins: number;
+  storage: number;
+  events: number;
   name: string;
 }

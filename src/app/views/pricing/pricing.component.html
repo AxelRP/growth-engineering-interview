@@ -4,8 +4,7 @@
   <div class="container px-4 mx-auto">
     <div class="mb-4 md:mb-8 text-center">
       <h2 class="mb-8 md:mb-14 primary-title">
-        Choose a
-        <span class="text-primary ml-1">plan</span>
+        Choose a <span class="text-primary ml-1">plan</span>
       </h2>
       <p class="text-lg text-gray-200">{{plans.length}} plans to fit all your needs.</p>
     </div>
@@ -20,20 +19,19 @@
             <ul class="text-base lg:text-lg text-white">
               <li class="flex items-center mb-6">
                 <i class="fas fa-check mr-6"></i>
-                <span>{{plan.feature1}} admin seats</span>
+                <span>{{plan.admins}} admin seats</span>
               </li>
               <li class="flex items-center mb-6">
                 <i class="fas fa-check mr-6"></i>
-                <span>{{plan.feature2}} MB of storage</span>
+                <span>{{plan.storage}} MB of storage</span>
               </li>
               <li class="flex items-center mb-6">
                 <i class="fas fa-check mr-6"></i>
-                <span>{{plan.feature3}} monthly events</span>
+                <span>{{plan.events}} monthly events</span>
               </li>
             </ul>
           </div>
           <div class="w-full md:w-1/2 lg:w-2/6 px-4 mb-10 lg:mb-0 text-center lg:border-l border-gray-500">
-            <!--      <h3 class="mb-3 text-lg font-bold text-blue-500">20% off with annual billing</h3>-->
             <div class="mb-1 flex justify-center font-bold text-white">
               <p class="self-end text-5xl">{{plan.price | currency: 'EUR'}}</p>
             </div>
