@@ -103,4 +103,4 @@ a different platform (Firebase, Aiven...), feel free to integrate it in the app.
 
 --- 
 
-Some of these tools and concepts might be now for you, so if you get stuck or have any question, please do not hesitate to email us.
+Some of these tools and concepts might be new for you, so if you get stuck or have any question, please do not hesitate to email us.
