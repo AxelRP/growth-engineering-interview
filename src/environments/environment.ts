@@ -18,7 +18,7 @@ export const environment = {
   },
 };
 
-// No need to use these credentials - better use your own :)
+// Don't use these credentials - better use your own :)
 // url: "https://tthentnnqdrbtrofchjj.supabase.co",
 // key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR0aGVudG5ucWRyYnRyb2ZjaGpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTA5NzUwOTUsImV4cCI6MTk2NjU1MTA5NX0.EjUMrxW_TwOW6GiCorGDOZAUORGsKI-UXUJl3fmzOTU"
 

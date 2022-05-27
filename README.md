@@ -51,7 +51,7 @@ create your own with SQL, Python, TypeScript..., or use an already available too
 ## Set up
 
 Before you start with the setup, you will need NodeJS installed: [https://nodejs.org/en/](https://nodejs.org/en/)
-1. Clone this repo in a local directory, open a terminal there and run `npm run install`.
+1. Clone this repo in a local directory, open a terminal there and run `npm install`.
 2. The app currently expects a [Supabase](https://supabase.com/) project to act as a DB. 
 You can create it with your own account for free.
 Once created, still on [app.supabase.io](https://app.supabase.io/), on the left side menu navigate to the `API > Authentication`. There, on the right side you will find your Supabase Client Key (a very long random string) and your Supabase URL
