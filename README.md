@@ -22,8 +22,8 @@ the code and upgrade some components/services if needed though.
 ## Objective
 
 The main objective is to enrich Hubspot contacts with website data and compute custom properties if needed. To do so, you will need:
-- Supabase project (more details on set up section)
-- Hubspot developer account
+- Supabase project (more details in Set Up section)
+- [Hubspot developer account](https://app.hubspot.com/signup-hubspot/crm)
 - Data extraction tool
 
 Full data workflow will look like this:
@@ -41,7 +41,7 @@ You will also find some forms (contact and request demo). When submitted, an eve
 
 ### Extraction Tool
 As long as you can read from your DB and process and send data into Hubspot, feel free to use any extraction tool you want: 
-create your own with SQL, Python, TypeScript..., or use an already available tool such as 
+create your own with SQL, Python, TypeScript..., and play with the Hubspot API or use an already available tool such as 
 [High Touch](https://hightouch.io/), [Census](https://www.getcensus.com/)...
 
 
@@ -85,7 +85,8 @@ Once created, still on [app.supabase.io](https://app.supabase.io/), on the left 
 2. Successfully register events in your DB
 
 #### Data processing
-3. Create and update Hubspot contacts 
+3. Create and update Hubspot contacts: use the data you are storing in Supabase to populate your new Hubspot account. The marketing
+team would like to see who is submitting forms and to be able to contact them. Use any extraction tool you want.
 
 Bonus:
 - With the available data, create some Hubspot custom properties that may be useful for audience generation 
